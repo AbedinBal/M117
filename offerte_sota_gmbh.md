@@ -1,7 +1,7 @@
 # Offerte an die Sota GmbH
 
-**Abedin IT Solutions**  
-Abedin Balanca  
+**AbedinXFlorent IT Solutions**  
+Abedin Balanca, Florent Nasufi  
 Zürich, Schweiz  
 
 **An:**  
@@ -157,13 +157,13 @@ Durch die saubere Planung, professionelle Umsetzung und den enthaltenen Startsup
 
 Mit freundlichen Grüssen  
 
-**Abedin Balanca**  
+**Abedin Balanca & Florent Nasufi**  
 Geschäftsführer  
-Abedin IT Solutions  
+AbedinXFlorent IT Solutions  
 
 ---
 
-## 12. Stichfeste Argumente für die Präsentation
+## 12. Argumente wieso unsere Offerte sich lohnt (überzeugen)
 
 ### Professionelle Umsetzung
 
