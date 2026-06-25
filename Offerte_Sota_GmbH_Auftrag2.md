@@ -1,5 +1,8 @@
-# Offerte für die IT-Infrastruktur der Sota GmbH
+from pathlib import Path
 
+content = """# Offerte für die IT-Infrastruktur der Sota GmbH
+
+**Offertennummer:** AIS-2026-0625-01  
 **Abedin IT Solutions**  
 Abedin Balanca  
 Zürich, Schweiz  
@@ -10,6 +13,7 @@ Geschäftsleitung
 Zürich  
 
 **Datum:** 25. Juni 2026  
+**Gültig bis:** 25. September 2026  
 
 ---
 
@@ -19,7 +23,7 @@ Sehr geehrte Damen und Herren
 
 Besten Dank für die Möglichkeit, Ihnen eine Offerte für den Aufbau und die Einrichtung Ihrer neuen IT-Infrastruktur zu unterbreiten.
 
-Diese Offerte basiert auf dem im ersten Teilauftrag erstellten Netzwerk- und Raumplan der Sota GmbH. Vorgesehen sind acht Computerarbeitsplätze, drei Netzwerkdrucker, ein Router, ein Netzwerk-Switch sowie ein zentraler Hauptverteiler.
+Diese Offerte basiert auf dem im ersten Teilauftrag erstellten Netzwerk- und Raumplan sowie dem IT-Konzept der Sota GmbH. Vorgesehen sind acht Computerarbeitsplätze, drei Netzwerkdrucker, ein Router mit Firewall, ein Hauptswitch, zwei zusätzliche Bereichs-Switches sowie ein zentraler Hauptverteiler.
 
 Unser Angebot umfasst die Beschaffung, Lieferung, Installation, Konfiguration, Dokumentation, Inbetriebnahme und Übergabe der gesamten ICT-Infrastruktur.
 
@@ -28,8 +32,8 @@ Folgende Leistungen sind Bestandteil unseres Angebots:
 - Beschaffung und Lieferung der benötigten ICT-Komponenten
 - Aufbau von acht Computerarbeitsplätzen
 - Installation und Einbindung von drei Netzwerkdruckern
-- Installation eines Routers und einer Firewall
-- Installation und Konfiguration eines Netzwerk-Switches
+- Installation eines Routers mit Firewall
+- Installation und Konfiguration von drei Netzwerk-Switches
 - Einrichtung des Hauptverteilers
 - Verkabelung der im Netzwerkplan eingezeichneten Räume
 - Einrichtung von Benutzern, Gruppen und Berechtigungen
@@ -43,26 +47,36 @@ Folgende Leistungen sind Bestandteil unseres Angebots:
 
 ## 2. Materialkosten
 
-Die nachfolgende Materialliste basiert auf dem Netzwerkplan aus dem ersten Teilauftrag. Hersteller, genaue Produkttypen und Preise werden nach der Produktrecherche ergänzt.
+Die Produkte wurden passend zum Netzwerkplan und zum IT-Konzept ausgewählt. Sämtliche Preise sind Richt- und Offertpreise inklusive Mehrwertsteuer mit Preisstand vom 25. Juni 2026.
 
-| Pos. | Material / Komponente | Menge | Einzelpreis inkl. MWST | Gesamtpreis inkl. MWST |
-|---:|---|---:|---:|---:|
-| 1 | Business-PC inklusive Tastatur und Maus | 8 | CHF ______ | CHF ______ |
-| 2 | Bildschirm | 8 | CHF ______ | CHF ______ |
-| 3 | Netzwerkdrucker | 3 | CHF ______ | CHF ______ |
-| 4 | Business-Router / Firewall | 1 | CHF ______ | CHF ______ |
-| 5 | Managed Netzwerk-Switch | 1 | CHF ______ | CHF ______ |
-| 6 | Netzwerkschrank / Hauptverteiler | 1 | CHF ______ | CHF ______ |
-| 7 | Patchpanel | 1 | CHF ______ | CHF ______ |
-| 8 | Netzwerkkabel Cat 6a | ca. 81 m | CHF ______ | CHF ______ |
-| 9 | Netzwerkdosen | mindestens 11 | CHF ______ | CHF ______ |
-| 10 | Patchkabel | mindestens 11 | CHF ______ | CHF ______ |
-| 11 | Steckdosenleisten und Stromzubehör | nach Bedarf | CHF ______ | CHF ______ |
-| 12 | Betriebssystem- und Softwarelizenzen | 8 | CHF ______ | CHF ______ |
-| 13 | Klein-, Befestigungs- und Montagematerial | pauschal | CHF ______ | CHF ______ |
-|  | **Total Materialkosten inkl. MWST** |  |  | **CHF ______** |
+| Pos. | Lieferant | Hersteller / Produkt | Menge | Einzelpreis inkl. MWST | Gesamtpreis inkl. MWST |
+|---:|---|---|---:|---:|---:|
+| 1 | Digitec | Lenovo ThinkCentre M70s Gen 6, 16 GB RAM, 512 GB SSD, Windows 11 Pro | 8 | CHF 623.65 | CHF 4’989.20 |
+| 2 | Digitec | Dell KM5221W Pro Tastatur- und Maus-Set, CH-Layout | 8 | CHF 40.70 | CHF 325.60 |
+| 3 | Digitec | Dell P2425H, 23.8 Zoll, Full HD | 8 | CHF 112.00 | CHF 896.00 |
+| 4 | Digitec | Brother HL-L5210DN Netzwerk-Laserdrucker | 3 | CHF 268.00 | CHF 804.00 |
+| 5 | Digitec | Ubiquiti UniFi Dream Machine Pro, Router und Firewall | 1 | CHF 362.00 | CHF 362.00 |
+| 6 | Digitec | Ubiquiti UniFi USW-16-Lite, Managed Hauptswitch, 16 Ports | 1 | CHF 195.00 | CHF 195.00 |
+| 7 | Digitec | Ubiquiti UniFi Lite 8 PoE, Managed Bereichs-Switch, 8 Ports | 2 | CHF 100.00 | CHF 200.00 |
+| 8 | Schweizer Fachhandel | 19-Zoll-Netzwerkschrank, 12 HE | 1 | CHF 250.00 | CHF 250.00 |
+| 9 | Schweizer Fachhandel | 19-Zoll-Patchpanel Cat 6a, 24 Ports | 1 | CHF 80.00 | CHF 80.00 |
+| 10 | Schweizer Fachhandel | Cat-6a-Installationskabel, 100-Meter-Rolle | 1 | CHF 150.00 | CHF 150.00 |
+| 11 | Schweizer Fachhandel | Cat-6a-Netzwerkdose inklusive Keystone-Modul | 11 | CHF 25.00 | CHF 275.00 |
+| 12 | Schweizer Fachhandel | Cat-6a-Patchkabel | 11 | CHF 9.00 | CHF 99.00 |
+| 13 | Schweizer Fachhandel | Steckdosenleiste mit Überspannungsschutz | 4 | CHF 30.00 | CHF 120.00 |
+| 14 | Microsoft | Microsoft 365 Business Standard, Jahreslizenz | 8 | CHF 131.27 | CHF 1’050.16 |
+| 15 | Schweizer Fachhandel | Befestigungs-, Beschriftungs- und Montagematerial | 1 pauschal | CHF 250.00 | CHF 250.00 |
+|  |  | **Total Materialkosten inkl. MWST** |  |  | **CHF 10’045.96** |
 
-> Die Kabellänge von ungefähr 81 Metern ergibt sich aus den im Plan eingetragenen Strecken. Für Verschnitt, Reserven und die Kabelführung sollte bei der Bestellung eine zusätzliche Reserve berücksichtigt werden.
+### Hinweise zur Materialkalkulation
+
+- Die PCs enthalten Windows 11 Pro.
+- Für jeden Arbeitsplatz ist ein Bildschirm sowie ein Tastatur- und Maus-Set vorgesehen.
+- Gemäss IT-Konzept werden drei Switches benötigt: `SW-01`, `SW-02` und `SW-03`.
+- Die drei Drucker entsprechen den Geräten `PR-01`, `PR-02` und `PR-03`.
+- Anstelle der berechneten Kabellänge von ungefähr 81 Metern wird eine Rolle mit 100 Metern bestellt. Dadurch sind Verschnitt, Kabelführung und Reserve abgedeckt.
+- Microsoft 365 Business Standard wird für acht Benutzerinnen und Benutzer während eines Jahres angeboten.
+- Preis- und Verfügbarkeitsänderungen der Lieferanten bleiben bis zur verbindlichen Bestellung vorbehalten.
 
 ---
 
@@ -81,10 +95,10 @@ Die nachfolgende Materialliste basiert auf dem Netzwerkplan aus dem ersten Teila
 
 ### 3.2 Kostenmatrix Dienstleistungen
 
-| Pos. | Kurzbeschrieb | Tarif | Stunden | Betrag |
+| Pos. | Kurzbeschrieb | Tarif | Stunden | Betrag exkl. MWST |
 |---:|---|:---:|---:|---:|
 | 1 | Consulting, Besprechungen, Beratung, Aufnahme vor Ort und Abklärungen | A | 12 | CHF 2’760.00 |
-| 2 | Elektriker UGV, externe Firma, 2 Mitarbeiter à 20 Stunden | E | 40 | CHF 4’000.00 |
+| 2 | Elektriker UGV, externe Firma, 2 Mitarbeitende à 20 Stunden | E | 40 | CHF 4’000.00 |
 | 3 | Bestellung, Lieferung und Aufbau der ICT-Komponenten | D | 8 | CHF 880.00 |
 | 4 | Betriebshandbuch und Systemdokumentation erstellen | D | 16 | CHF 1’760.00 |
 | 5 | Offline-Installation der Netzwerkgeräte, Computer und Drucker | E | 24 | CHF 2’400.00 |
@@ -103,7 +117,7 @@ Die nachfolgende Materialliste basiert auf dem Netzwerkplan aus dem ersten Teila
 | Beschreibung | Betrag |
 |---|---:|
 | Total Dienstleistungen exkl. MWST | CHF 24’060.00 |
-| MWST 8 % | CHF 1’924.80 |
+| MWST gemäss Aufgabenstellung, 8 % | CHF 1’924.80 |
 | **Total Dienstleistungen inkl. MWST** | **CHF 25’984.80** |
 
 ---
@@ -112,11 +126,13 @@ Die nachfolgende Materialliste basiert auf dem Netzwerkplan aus dem ersten Teila
 
 | Beschreibung | Betrag |
 |---|---:|
-| Materialkosten inkl. MWST | CHF ______ |
+| Materialkosten inkl. MWST | CHF 10’045.96 |
 | Dienstleistungskosten inkl. MWST | CHF 25’984.80 |
-| **Angebotspreis Total inkl. MWST** | **CHF ______** |
+| **Angebotspreis Total inkl. MWST** | **CHF 36’030.76** |
 
-Der endgültige Angebotspreis wird nach Ergänzung der konkreten Produkte und Materialpreise berechnet.
+Der verbindliche Angebotspreis für die beschriebenen Materialien und Leistungen beträgt:
+
+# **CHF 36’030.76 inkl. MWST**
 
 ---
 
@@ -124,18 +140,22 @@ Der endgültige Angebotspreis wird nach Ergänzung der konkreten Produkte und Ma
 
 Nach Abschluss des Projekts kann optional ein Wartungs- und Supportvertrag abgeschlossen werden.
 
-Der Vertrag kann folgende Leistungen enthalten:
+### Enthaltene Leistungen
 
+- Bis zu vier Supportstunden pro Monat
+- Fernsupport während der Geschäftszeiten
 - Unterstützung bei technischen Störungen
 - Regelmässige Kontrolle der Netzwerkgeräte
 - Installation sicherheitsrelevanter Updates
 - Überprüfung der Datensicherung
 - Unterstützung bei Benutzer- und Berechtigungsänderungen
-- Fernsupport und Support vor Ort
+- Monatliche Kurzdokumentation der ausgeführten Arbeiten
 
-**Preis des optionalen Wartungsvertrags:** CHF ______ pro Monat inkl. MWST
+**Preis des optionalen Wartungsvertrags:** **CHF 540.00 pro Monat inkl. MWST**
 
-Der Wartungsvertrag ist nicht im Gesamtpreis dieser Offerte enthalten.
+Nicht bezogene Stunden verfallen am Ende des jeweiligen Monats. Zusätzliche Arbeiten werden nach dem geltenden Stundensatz und nach vorheriger Freigabe verrechnet.
+
+Der Wartungsvertrag ist nicht im Gesamtpreis dieser Offerte enthalten und kann separat bestellt werden.
 
 ---
 
@@ -147,15 +167,23 @@ Der Auftraggeber haftet für die Richtigkeit und Vollständigkeit der bereitgest
 
 Leistungen, die nicht ausdrücklich in dieser Offerte aufgeführt sind, werden nach vorheriger Absprache zusätzlich verrechnet.
 
+Änderungen am Umfang der Installation bedürfen einer schriftlichen Bestätigung durch beide Parteien.
+
 ---
 
 ## 7. Rechnungsstellung und Zahlungsbedingungen
 
-Die Rechnungsstellung erfolgt monatlich mit einem Zahlungsziel von 30 Tagen netto.
+Die Rechnungsstellung erfolgt in drei Etappen:
+
+| Zeitpunkt | Anteil |
+|---|---:|
+| Nach Auftragserteilung für die Materialbeschaffung | 40 % |
+| Nach Lieferung und abgeschlossener Grundinstallation | 40 % |
+| Nach erfolgreicher Abnahme und Übergabe | 20 % |
+
+Das Zahlungsziel beträgt jeweils 30 Tage netto ab Rechnungsdatum.
 
 Eine Skontierung ist ausgeschlossen.
-
-Materialbestellungen können nach Auftragserteilung als Akontozahlung verrechnet werden.
 
 ---
 
@@ -163,7 +191,17 @@ Materialbestellungen können nach Auftragserteilung als Akontozahlung verrechnet
 
 Die Ausführungstermine werden nach Auftragserteilung gemeinsam mit der Sota GmbH festgelegt.
 
-Lieferfristen von Herstellern und Lieferanten können den Projekttermin beeinflussen. Terminänderungen aufgrund nicht verfügbarer Produkte werden dem Auftraggeber rechtzeitig mitgeteilt.
+Der geplante Projektablauf umfasst:
+
+1. Detailplanung und Bestellung
+2. Lieferung und Vorbereitung
+3. Gebäudeverkabelung
+4. Installation der Geräte
+5. Konfiguration und Tests
+6. Schulung
+7. Abnahme und Übergabe
+
+Lieferfristen von Herstellern und Lieferanten können den Projekttermin beeinflussen. Terminänderungen aufgrund nicht verfügbarer Produkte werden dem Auftraggeber rechtzeitig mitgeteilt. Gleichwertige Ersatzprodukte dürfen nur nach Zustimmung der Sota GmbH eingesetzt werden.
 
 ---
 
@@ -174,6 +212,8 @@ Unsere Haftung ist ausgeschlossen, soweit eine Pflichtverletzung auf leicht fahr
 Diese Haftungsbegrenzung gilt nicht bei der Verletzung wesentlicher Vertragspflichten. In diesem Fall beschränkt sich die Haftung auf vorhersehbare und vertragstypische Schäden.
 
 Die Haftungsbegrenzung gilt ebenfalls nicht bei Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie bei vorsätzlichem oder grob fahrlässigem Handeln.
+
+Für Datenverluste haftet der Auftragnehmer nur, wenn diese trotz einer nachweislich ordnungsgemäss eingerichteten und geprüften Datensicherung entstanden sind.
 
 ---
 
@@ -187,9 +227,9 @@ Der Gerichtsstand ist Zürich.
 
 ## 11. Gültigkeit des Angebots
 
-Diese Offerte ist ab dem Ausstellungsdatum während drei Monaten gültig.
+Diese Offerte ist ab dem Ausstellungsdatum bis zum **25. September 2026** gültig.
 
-Preisänderungen durch Hersteller oder Lieferanten bleiben vorbehalten, sofern sie nach Ablauf der Angebotsgültigkeit eintreten.
+Die aufgeführten Lieferantenpreise beruhen auf dem Preisstand vom 25. Juni 2026. Sollte ein Produkt bei Auftragserteilung nicht mehr verfügbar sein, wird nach Rücksprache ein technisch gleichwertiges Produkt angeboten.
 
 ---
 
@@ -201,7 +241,7 @@ Ergänzend gelten die Allgemeinen Geschäftsbedingungen der Firma **Abedin IT So
 
 ## 13. Annahme des Angebots
 
-Mit der Unterzeichnung dieser Offerte bestätigt der Auftraggeber die Annahme des Angebots und die aufgeführten Bedingungen.
+Mit der Unterzeichnung dieser Offerte bestätigt der Auftraggeber die Annahme des Angebots, der aufgeführten Leistungen und der Angebotsbedingungen.
 
 | Auftragnehmer | Auftraggeber |
 |---|---|
@@ -217,3 +257,24 @@ Mit freundlichen Grüssen
 **Abedin Balanca**  
 Geschäftsführer  
 Abedin IT Solutions
+
+---
+
+## 14. Preisquellen und Nachvollziehbarkeit
+
+Die Produktpreise wurden anhand öffentlich verfügbarer Schweizer Anbieterpreise recherchiert. Verwendete Referenzen:
+
+- Digitec: Lenovo ThinkCentre M70s Gen 6
+- Digitec: Dell P2425H
+- Digitec: Brother HL-L5210DN
+- Digitec: Ubiquiti UniFi Dream Machine Pro
+- Digitec: Ubiquiti UniFi Switches
+- Microsoft Schweiz: Microsoft 365 Business Standard
+- Schweizer Fachhandel: Netzwerk- und Montagematerial
+
+Die genauen Einkaufspreise können sich bis zum Bestellzeitpunkt verändern.
+"""
+
+path = Path("/mnt/data/Offerte_Sota_GmbH_Auftrag2_vollstaendig.md")
+path.write_text(content, encoding="utf-8")
+print(path)
