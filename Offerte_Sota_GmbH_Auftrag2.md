@@ -1,6 +1,4 @@
 
-content = """# Offerte für die IT-Infrastruktur der Sota GmbH
-
 **Offertennummer:** AIS-2026-0625-01  
 **Abedin IT Solutions**  
 Abedin Balanca  
