@@ -1,7 +1,7 @@
 
 **Offertennummer:** AIS-2026-0625-01  
 **Abedin & Florent IT Solutions**  
-Abedin Balanca, Florent Nasufi 
+Abedin Balanca, Florent Nasufi, 
 Zürich, Schweiz  
 
 **An:**  
