@@ -242,7 +242,7 @@ Mit der Unterzeichnung dieser Offerte bestätigt der Auftraggeber die Annahme de
 
 | Auftragnehmer | Auftraggeber |
 |---|---|
-| Abedin IT Solutions | Sota GmbH |
+| Abedin & Florent IT Solutions | Sota GmbH |
 | Name: Abedin Balanca | Name: ________________________ |
 | Ort/Datum: ________________________ | Ort/Datum: ________________________ |
 | Unterschrift: _____________________ | Unterschrift: _____________________ |
