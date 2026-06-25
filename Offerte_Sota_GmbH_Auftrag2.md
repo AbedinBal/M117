@@ -1,7 +1,7 @@
 
 **Offertennummer:** AIS-2026-0625-01  
-**Abedin IT Solutions**  
-Abedin Balanca  
+**Abedin & Florent IT Solutions**  
+Abedin Balanca, Florent Nasufi 
 Zürich, Schweiz  
 
 **An:**  
@@ -251,9 +251,9 @@ Mit der Unterzeichnung dieser Offerte bestätigt der Auftraggeber die Annahme de
 
 Mit freundlichen Grüssen  
 
-**Abedin Balanca**  
+**Abedin Balanca, Florent Nasufi**  
 Geschäftsführer  
-Abedin IT Solutions
+Abedin & Florent IT Solutions
 
 ---
 
@@ -272,6 +272,3 @@ Die Produktpreise wurden anhand öffentlich verfügbarer Schweizer Anbieterpreis
 Die genauen Einkaufspreise können sich bis zum Bestellzeitpunkt verändern.
 """
 
-path = Path("/mnt/data/Offerte_Sota_GmbH_Auftrag2_vollstaendig.md")
-path.write_text(content, encoding="utf-8")
-print(path)
