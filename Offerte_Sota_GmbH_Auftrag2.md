@@ -1,4 +1,3 @@
-from pathlib import Path
 
 content = """# Offerte für die IT-Infrastruktur der Sota GmbH
 
